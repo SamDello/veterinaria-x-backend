@@ -1,0 +1,78 @@
+const express = require('express');
+const router = express.Router();
+
+const authRoutes = require('./auth.routes');
+const clienteRoutes = require('./cliente.routes');
+const mascotaRoutes = require('./mascota.routes');
+const especieRoutes = require('./especie.routes');
+const razaRoutes = require('./raza.routes');
+const servicioVeterinarioRoutes = require('./servicioVeterinario.routes');
+const atencionVeterinariaRoutes = require('./atencionVeterinaria.routes');
+const categoriaRoutes = require('./categoria.routes');
+const marcaRoutes = require('./marca.routes');
+const productoRoutes = require('./producto.routes');
+const almacenRoutes = require('./almacen.routes');
+const stockRoutes = require('./stock.routes');
+const movimientoInventarioRoutes = require('./movimientoInventario.routes');
+const proveedorRoutes = require('./proveedor.routes');
+const compraRoutes = require('./compra.routes');
+const metodoPagoRoutes = require('./metodoPago.routes');
+const cajaRoutes = require('./caja.routes');
+const ventaRoutes = require('./venta.routes');
+const pagoRoutes = require('./pago.routes');
+const aperturaCajaRoutes = require('./aperturaCaja.routes');
+const cierreCajaRoutes = require('./cierreCaja.routes');
+const movimientoCajaRoutes = require('./movimientoCaja.routes');
+const reporteRoutes = require('./reporte.routes');
+const pageVisitRoutes = require('./pageVisit.routes');
+const searchRoutes = require('./search.routes');
+const reportePdfRoutes = require('./reportePdf.routes');
+const reportMailRoutes = require('./reportMail.routes');
+const rolRoutes = require('./rol.routes');
+const permisoRoutes = require('./permiso.routes');
+const usuarioRoutes = require('./usuario.routes');
+const empleadoRoutes = require('./empleado.routes');
+const pagoQrRoutes = require('./pagoQr.routes');
+const fifoInventarioRoutes = require('./fifoInventario.routes');
+const traspasoRoutes = require('./traspaso.routes');
+
+
+
+router.use('/auth', authRoutes);
+router.use('/clientes', clienteRoutes);
+router.use('/mascotas', mascotaRoutes);
+router.use('/especies', especieRoutes);
+router.use('/razas', razaRoutes);
+router.use('/servicios-veterinarios', servicioVeterinarioRoutes);
+router.use('/atenciones-veterinarias', atencionVeterinariaRoutes);
+router.use('/categorias', categoriaRoutes);
+router.use('/marcas', marcaRoutes);
+router.use('/productos', productoRoutes);
+router.use('/almacenes', almacenRoutes);
+router.use('/stocks', stockRoutes);
+router.use('/movimientos-inventario', movimientoInventarioRoutes);
+router.use('/proveedores', proveedorRoutes);
+router.use('/compras', compraRoutes);
+router.use('/metodos-pago', metodoPagoRoutes);
+router.use('/cajas', cajaRoutes);
+router.use('/ventas', ventaRoutes);
+router.use('/pagos', pagoRoutes);
+router.use('/aperturas-caja', aperturaCajaRoutes);
+router.use('/cierres-caja', cierreCajaRoutes);
+router.use('/movimientos-caja', movimientoCajaRoutes);
+router.use('/reportes', reporteRoutes);
+router.use('/page-visits', pageVisitRoutes);
+router.use('/search', searchRoutes);
+router.use('/reportes-pdf', reportePdfRoutes);
+router.use('/reportes-email', reportMailRoutes);
+router.use('/roles', rolRoutes);
+router.use('/permisos', permisoRoutes);
+router.use('/usuarios', usuarioRoutes);
+router.use('/empleados', empleadoRoutes);
+router.use('/pagos-qr', pagoQrRoutes);
+router.use('/fifo-inventario', fifoInventarioRoutes);
+router.use('/traspasos', traspasoRoutes);
+
+
+
+module.exports = router;
