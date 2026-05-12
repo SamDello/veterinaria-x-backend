@@ -27,5 +27,5 @@ services:
       LIBELULA_APPKEY: ${LIBELULA_APPKEY}
       LIBELULA_CALLBACK_URL: ${LIBELULA_CALLBACK_URL}
       LIBELULA_MONEDA: ${LIBELULA_MONEDA:-BOB}
-    ports:
-      - "${PORT:-3000}:${PORT:-3000}"
+    expose:
+      - "${PORT:-3000}"
