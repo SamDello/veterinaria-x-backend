@@ -35,6 +35,7 @@ const empleadoRoutes = require('./empleado.routes');
 const pagoQrRoutes = require('./pagoQr.routes');
 const fifoInventarioRoutes = require('./fifoInventario.routes');
 const traspasoRoutes = require('./traspaso.routes');
+const dashboardRoutes = require('./dashboard.routes');
 
 
 
@@ -72,6 +73,7 @@ router.use('/empleados', empleadoRoutes);
 router.use('/pagos-qr', pagoQrRoutes);
 router.use('/fifo-inventario', fifoInventarioRoutes);
 router.use('/traspasos', traspasoRoutes);
+router.use('/dashboard', dashboardRoutes);
 
 
 
